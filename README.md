@@ -10,7 +10,7 @@ A simple gem with native C extension for Ruby thread experiments.
 
 ```bash
 gem build blocking_sleep.gemspec
-gem install blocking_sleep-0.1.0.gem
+gem install blocking_sleep-0.2.0.gem
 ```
 
 Or for development:
@@ -61,64 +61,6 @@ Thread.new do
 end
 
 sleep(3)
-```
-
-# Build and Usage Instructions
-
-## Quick Start
-
-```bash
-# 1. Compile C extension
-cd ext/blocking_sleep
-ruby extconf.rb
-make
-
-# 2. Move compiled file
-cd ../..
-mkdir -p lib/blocking_sleep
-mv blocking_sleep.so lib/blocking_sleep/
-
-# 3. Run tests
-ruby test_blocking_sleep.rb
-
-```
-
-## Alternative via Rake
-
-```bash
-# Install rake and rake-compiler
-gem install rake rake-compiler
-
-# Compile
-rake compile
-
-
-# Clean
-rake clean
-```
-
-## Usage in Your Code
-
-```ruby
-$LOAD_PATH.unshift File.expand_path('lib', __dir__)
-require 'blocking_sleep'
-
-# Blocking sleep for 2 seconds
-BlockingSleep.sleep(2)
-```
-
-## Building a Gem Package
-
-```bash
-gem build blocking_sleep.gemspec
-gem install blocking_sleep-0.1.0.gem
-```
-
-After installation, you can simply use:
-
-```ruby
-require 'blocking_sleep'
-BlockingSleep.sleep(5)
 ```
 
 ## Warning
