@@ -1,0 +1,8 @@
+*.so
+*.o
+*.bundle
+Makefile
+mkmf.log
+pkg/
+*.gem
+
