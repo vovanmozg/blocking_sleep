@@ -5,4 +5,4 @@ Makefile
 mkmf.log
 pkg/
 *.gem
-
+tmp
