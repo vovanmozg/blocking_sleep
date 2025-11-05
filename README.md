@@ -121,25 +121,6 @@ require 'blocking_sleep'
 BlockingSleep.sleep(5)
 ```
 
-## Project Structure
-
-```
-blocking_sleep/
-├── ext/blocking_sleep/      # C extension
-│   ├── blocking_sleep.c     # Native code
-│   └── extconf.rb           # Build configuration
-├── lib/
-│   ├── blocking_sleep.rb    # Ruby wrapper
-│   └── blocking_sleep/
-│       └── blocking_sleep.so # Compiled extension
-├── test_blocking_sleep.rb   # Detailed tests
-├── example.rb               # Simple example
-├── blocking_sleep.gemspec   # Gem specification
-├── Rakefile                 # Build tasks
-├── README.md                # Documentation
-└── BUILD.md                 # This instruction
-```
-
 ## Warning
 
 This gem is created exclusively for educational purposes and GVL experiments.
