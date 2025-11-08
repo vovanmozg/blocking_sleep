@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'blocking_sleep'
-  s.version     = '0.2.0'
+  s.version     = '0.3.0'
   s.summary     = 'Native blocking sleep'
   s.description = 'A simple C extension that provides blocking sleep without releasing GVL'
   s.authors     = ['Vladimir Polukhin']
@@ -14,4 +14,5 @@ Gem::Specification.new do |s|
   
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rake-compiler'
+  s.add_development_dependency 'minitest'
 end

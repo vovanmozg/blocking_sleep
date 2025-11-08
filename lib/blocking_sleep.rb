@@ -4,6 +4,6 @@ require 'blocking_sleep/blocking_sleep'
 # that doesn't release the GVL (Global VM Lock).
 # This is useful for testing thread behavior and GVL interactions.
 module BlockingSleep
-  VERSION = "0.1.0"
+  VERSION = "0.3.0"
 end
 

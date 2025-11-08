@@ -7,4 +7,5 @@ gemspec
 group :development do
   gem "rake"
   gem "rake-compiler"
+  gem "minitest"
 end
